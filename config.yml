@@ -1,0 +1,23 @@
+versión : 2
+trabajos :
+  construir :
+    acoplador :
+      - imagen : debian: stretch
+
+    pasos :
+      - pago
+
+      - ejecutar :
+          nombre : Saludo
+          comando : echo Hola, mundo.
+
+      - ejecutar :
+          nombre : Imprimir la hora actual
+          comando : fecha
+          # ~ / .circleci / config.yml
+versión : 2
+trabajos :
+  prueba :
+    acoplador :
+      - image : circleci / <language>: <versión TAG>
+    paralelismo : 4
